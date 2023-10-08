@@ -142,6 +142,7 @@ nav  ul  li img
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: block;
     align-items: center;
     justify-content: center;
 }
@@ -163,6 +164,33 @@ nav  ul  li img
     background-color: cornflowerblue;
 }
 .Parallax_more_info:hover
+{
+    cursor: pointer;
+    background-color: dodgerblue;
+}
+.Options
+{
+    display: block;
+}
+.Options_Header1
+{
+    color: black;
+    text-align: center;
+}
+.Options_Text1
+{
+    color: black;
+    text-align: center;
+}
+.Options_download
+{
+    vertical-align: middle;
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: cornflowerblue;
+}
+.Options_download:hover
 {
     cursor: pointer;
     background-color: dodgerblue;
