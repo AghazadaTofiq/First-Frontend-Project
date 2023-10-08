@@ -73,3 +73,33 @@ nav  ul  li img
     color: black;
     background-color: white;
 }
+.About_Company
+{
+    display: flex;
+    height: 90%;
+    align-items: center;
+}
+.About_Company img
+{
+    width: 700px;
+    height: 450px;
+    padding-left: 150px;
+}
+.About_Company_Right_Hand_Side
+{
+    display: block;
+    align-items: center;
+    margin-left: 100px;
+}
+.About_Company_read_more
+{
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: cornflowerblue;
+}
+.About_Company_read_more:hover
+{
+    cursor: pointer;
+    background-color: dodgerblue;
+}
