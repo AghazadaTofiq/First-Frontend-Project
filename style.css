@@ -103,3 +103,32 @@ nav  ul  li img
     cursor: pointer;
     background-color: dodgerblue;
 }
+.About_Portfolio
+{
+    display: flex;
+    align-items: center;
+}
+.About_Portfolio_Left_Hand_Side
+{
+    display: block;
+    align-items: center;
+    padding-left: 150px;
+}
+.About_Portfolio_see
+{
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: cornflowerblue;
+}
+.About_Portfolio_see:hover
+{
+    cursor: pointer;
+    background-color: dodgerblue;
+}
+.About_Portfolio img
+{
+    width: 700px;
+    height: 450px;
+    margin-left: 100px;
+}
