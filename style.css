@@ -75,8 +75,8 @@ nav  ul  li img
 }
 .About_Company
 {
+    height: 90vh;
     display: flex;
-    height: 90%;
     align-items: center;
 }
 .About_Company img
@@ -105,8 +105,10 @@ nav  ul  li img
 }
 .About_Portfolio
 {
+    height: 100vh;
     display: flex;
     align-items: center;
+    background-color: ghostwhite;
 }
 .About_Portfolio_Left_Hand_Side
 {
@@ -131,4 +133,37 @@ nav  ul  li img
     width: 700px;
     height: 450px;
     margin-left: 100px;
+}
+.Parallax
+{
+    height: 40vh;
+    background-image: url("Parallax.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+.Parallax_Header1
+{
+    color: white;
+    text-align: center;
+}
+.Parallax_Text1
+{
+    color: white;
+    text-align: center;
+}
+.Parallax_more_info
+{
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: cornflowerblue;
+}
+.Parallax_more_info:hover
+{
+    cursor: pointer;
+    background-color: dodgerblue;
 }
