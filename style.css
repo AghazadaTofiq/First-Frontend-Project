@@ -2,11 +2,13 @@ header
 {
     display: flex;
     justify-content: space-between;
+    height: 5vh;
 }
 nav ul
 {
     display: flex;
-    list-style-type: none
+    list-style-type: none;
+    margin-top: -10px;
 }
 nav ul li
 {
@@ -24,11 +26,12 @@ nav  ul  li img
 .logo
 {
     margin-left: 125px;
+    margin-top: -20px;
+    text-decoration: none;
 }
-.logo img
+.logo h1
 {
-    width: 125px;
-    height: 125px;
+    text-decoration: none;
 }
 .Opening 
 {
@@ -36,16 +39,24 @@ nav  ul  li img
     height: 100vh;
     background-image: url(opening_background.jpg);
     background-size: cover;
+    
 }
 .Opening_Header1
 {
     color: white;
     text-align: center;
+    font-size: 72px;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    vertical-align: middle;
+    transform: translateY(350%);
 }
 .Opening_Text1
 {
     color: white;
     text-align: center;
+    transform: translateY(1450%);
 }
 .read_more
 {
@@ -53,6 +64,7 @@ nav  ul  li img
     height: 50px;
     color: white;
     background-color: cornflowerblue;
+    border: none;
 }
 .read_more:hover
 {
@@ -66,6 +78,7 @@ nav  ul  li img
     color: white;
     background: transparent;
     border-color: white;
+    
 }
 .download_now:hover
 {
@@ -97,6 +110,7 @@ nav  ul  li img
     height: 50px;
     color: white;
     background-color: cornflowerblue;
+    border: none;
 }
 .About_Company_read_more:hover
 {
@@ -108,13 +122,23 @@ nav  ul  li img
     height: 100vh;
     display: flex;
     align-items: center;
-    background-color: ghostwhite;
+    background-color: whitesmoke;
+    gap: 150px;
 }
 .About_Portfolio_Left_Hand_Side
 {
     display: block;
     align-items: center;
-    padding-left: 150px;
+    padding-left: 200px;
+}
+.About_Portfolio_Header1
+{
+    font-size: 36px;
+}
+.About_Portfolio_Text1
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .About_Portfolio_see
 {
@@ -122,6 +146,7 @@ nav  ul  li img
     height: 50px;
     color: white;
     background-color: cornflowerblue;
+    border: none;
 }
 .About_Portfolio_see:hover
 {
@@ -162,6 +187,7 @@ nav  ul  li img
     height: 50px;
     color: white;
     background-color: cornflowerblue;
+    border: none;
 }
 .Parallax_more_info:hover
 {
@@ -189,6 +215,7 @@ nav  ul  li img
     height: 50px;
     color: white;
     background-color: cornflowerblue;
+    border: none;
 }
 .Options_download:hover
 {
@@ -315,5 +342,5 @@ footer nav ul li
 {
     margin-right: 50px;
     padding: 0px;
-    margin-top: -10px;
+    margin-top: 20px;
 }
