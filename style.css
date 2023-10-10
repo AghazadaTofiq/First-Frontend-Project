@@ -230,7 +230,7 @@ nav  ul  li img
 }
 .Propaganda
 {
-    height: 80vh;
+    height: 60vh;
     background-image: url("Propaganda_img.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -259,4 +259,61 @@ nav  ul  li img
 .Propaganda p
 {
     color: white;
+}
+.Partners
+{
+    height: 40vh;
+    display: block;
+}
+.Partners_Header1
+{
+    color: black;
+    text-align: center;
+}
+.Partners_logos
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+.Partners_logos img
+{
+    height: 150px;
+    width: 150px;
+    margin: 25px;
+    padding: 25px;
+}
+.Income
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    height: 20vh;
+    gap: 100px;
+    background-color: whitesmoke;
+}
+footer
+{
+    display: flex;
+    height: 40vh;
+    background-color: black;
+    justify-content: space-between;
+    
+}
+footer h6
+{
+    color: white;
+    margin-left: 100px;
+    margin-top: 10px;
+    font-size: 25px;
+}
+footer nav ul li
+{
+    margin-right: 50px;
+    padding: 0px;
+    margin-top: -10px;
 }
