@@ -195,3 +195,68 @@ nav  ul  li img
     cursor: pointer;
     background-color: dodgerblue;
 }
+.Projects
+{
+    display: block;
+    background-color: black;
+    width: 100%;
+}
+.Projects_Header1
+{
+    text-align: center;
+    color: white;
+}
+.Projects_Text1
+{
+    text-align: center;
+    color: white;
+}
+.Projects_grid
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 100px;
+}
+.Projects_grid img
+{
+    width: 375px;
+    height: 375px;
+}
+.Projects_grid img:hover
+{
+    cursor: pointer;
+}
+.Propaganda
+{
+    height: 80vh;
+    background-image: url("Propaganda_img.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.Propaganda_Header1
+{
+    padding-top: 25px;
+    color: white;
+    text-align: center;
+}
+.Propaganda_Text1
+{
+    color: white;
+    text-align: center;
+}
+.Propaganda img
+{
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.Propaganda p
+{
+    color: white;
+}
