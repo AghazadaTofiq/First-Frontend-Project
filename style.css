@@ -33,6 +33,49 @@ nav  ul  li img
 {
     text-decoration: none;
 }
+.modal 
+{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content 
+{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 1s
+}
+@keyframes animatetop 
+{
+    from {top: -1200px}
+    to {top: 600px}
+}
+.close 
+{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus
+{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .Opening 
 {
     width: 100%;
@@ -86,6 +129,7 @@ nav  ul  li img
     color: black;
     background-color: white;
 }
+
 .About_Company
 {
     height: 90vh;
@@ -117,6 +161,7 @@ nav  ul  li img
     cursor: pointer;
     background-color: dodgerblue;
 }
+
 .About_Portfolio
 {
     height: 100vh;
@@ -159,6 +204,7 @@ nav  ul  li img
     height: 450px;
     margin-left: 100px;
 }
+
 .Parallax
 {
     height: 40vh;
@@ -194,6 +240,7 @@ nav  ul  li img
     cursor: pointer;
     background-color: dodgerblue;
 }
+
 .Options
 {
     display: block;
@@ -222,6 +269,7 @@ nav  ul  li img
     cursor: pointer;
     background-color: dodgerblue;
 }
+
 .Projects
 {
     display: block;
@@ -255,6 +303,7 @@ nav  ul  li img
 {
     cursor: pointer;
 }
+
 .Propaganda
 {
     height: 60vh;
@@ -263,7 +312,7 @@ nav  ul  li img
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: block;
+    display: ruby;
     align-items: center;
     justify-content: center;
 }
@@ -273,20 +322,82 @@ nav  ul  li img
     color: white;
     text-align: center;
 }
-.Propaganda_Text1
+
+.Respect 
+{
+    display: none;
+}
+.prev, .next 
+{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next 
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover
+{
+    background-color: rgba(0,0,0,0.8);
+}
+.Xavier_Text1
 {
     color: white;
     text-align: center;
 }
-.Propaganda img
+.Respect img
 {
     border-radius: 50%;
     vertical-align: middle;
+    transition: transform 750ms;
+    will-change: transform;
 }
-.Propaganda p
+.Respect p
 {
     color: white;
 }
+.Hernandez_Text1
+{
+    color: white;
+    text-align: center;
+}
+.dot 
+{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover 
+{
+    background-color: #717171;
+}
+.fade 
+{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade 
+{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
 .Partners
 {
     height: 40vh;
@@ -311,6 +422,7 @@ nav  ul  li img
     margin: 25px;
     padding: 25px;
 }
+
 .Income
 {
     display: flex;
@@ -323,6 +435,7 @@ nav  ul  li img
     gap: 100px;
     background-color: whitesmoke;
 }
+
 footer
 {
     display: flex;

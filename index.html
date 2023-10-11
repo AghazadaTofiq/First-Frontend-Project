@@ -7,66 +7,85 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <a href="#" class="logo">    
+        <header id="Opening">
+            <a href="#Opening" class="logo">    
                 <h1>Shapely</h1>
             </a>
+
             <nav>
                 <ul>
-                    <li><a href="#">HOME</a>
+                    <li><a href="#Opening">HOME</a>
                     <li><a href="#">BLOG</a>
                     <li><a href="#">PORTFOLIO</a>
-                    <li><a href="#">ABOUT THE TESTS ^</a>
+                    <li><a href="#" id="myBtn">ABOUT THE TESTS ^</a>
                     <li><a href="#">LEVEL 1 ^</a>
                     <li><a href="#">SHOP</a>
                     <li><img src="search_icon.png" alt="">
                 </ul>
             </nav>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal..</p>
+                </div>
+            </div>
         </header>
+
         <main>
-            <section class="Opening">
+            <section class="Opening" >
                 <h1 class="Opening_Header1">We Change Everything WordPress</h1>
                 <p class="Opening_Text1">This is the only WordPress theme you will ever want to use</p>
                 <button class="read_more">READ MORE</button>
                 <button class="download_now">DOWNLOAD NOW</button>
             </section>
+
             <section class="About_Company">
                 <img src="About_Company_img.png" alt="">
+
                 <div class="About_Company_Right_Hand_Side">
                     <h1 class="About_Company_Header1">SEO Friendly</h1>
                     <p class="About_Company_Text1">This is the only WordPress theme you will ever want to use</p>
                     <button class="About_Company_read_more">READ MORE</button>
                 </div>
             </section>
+
             <section class="About_Portfolio">
                 <div class="About_Portfolio_Left_Hand_Side">
                     <h1 class="About_Portfolio_Header1">Portfolio</h1>
                     <p class="About_Portfolio_Text1">Some sentences</p>
                     <button class="About_Portfolio_see">SEE IT IN ACTION</button>
                 </div>
+
                 <img src="About_Portfolio_img.png" alt="">
             </section>
+
             <section class="Parallax">
                 <h1 class="Parallax_Header1">Small Parallax Section</h1>
                 <p class="Parallax_Text1">Some sentences</p>
                 <button class="Parallax_more_info">MORE INFO</button>
             </section>
+
             <section class="Options">
                 <h1 class="Options_Header1">Limitless Options</h1>
                 <p class="Options_Text1">Some sentences</p>
                 <button class="Options_download">DOWNLOAD NOW</button>
                 <img src="Options_image.jpg" alt="">
             </section>
+
             <section class="Projects">
                 <h1 class="Projects_Header1">Our Latest Projects</h1>
                 <p class="Projects_Text1">Here is our latest projects. You'll love them!</p>
+
                 <div class="Projects_grid">
                     <div class="first">
                         <img src="1.jpg" alt="">
+
                         <div class="first_text">
                             <p>SALAM</p>
                         </div>
                     </div>
+
                     <img src="2.jpg" alt="">
                     <img src="3.jpg" alt="">
                     <img src="4.jpg" alt="">
@@ -78,14 +97,35 @@
                     <img src="10.jpg" alt="">
                 </div>
             </section>
+
             <section class="Propaganda">
                 <h1 class="Propaganda_Header1">Small Parallax Section</h1>
-                <p class="Propaganda_Text1">Some sentences</p>
-                <img src="Xavier.jpg"  alt="" >
-                <p>  Xavier </p>
+
+                <div class="Respect fade">
+                    <p class="Xavier_Text1">Some sentences</p>
+                    <img src="Xavier.jpg" alt="" >
+                    <p>Xavier</p>
+                </div>
+
+                <div class="Respect fade">
+                    <p class="Hernandez_Text1">Some sentences</p>
+                    <img src="Hernandez.jpg" alt="" >
+                    <p>Hernandez</p>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </section>
+
             <section class="Partners">
                 <h1 class="Partners_Header1">Partners</h1>
+
                 <div class="Partners_logos">
                     <img src="1_logo.png" alt="">
                     <img src="2_logo.png" alt="">
@@ -94,6 +134,7 @@
                     <img src="5_logo.png" alt="">
                 </div>
             </section>
+
             <section class="Income">
                 <h1 class="Income_Header1">Does this satisfy you?</h1>
                 <button class="Options_download">DOWNLOAD NOW</button>
@@ -101,6 +142,7 @@
         </main>
         <footer>
             <h6>Prepared by Aghazada Tofig</h6>
+
             <nav>
                 <ul>
                     <li><a href="#"><img src="facebook_icon.png" alt=""></a>
@@ -110,6 +152,7 @@
                     <li><a href="#"><img src="insta_icon.png" alt=""></a>
                 </ul>
             </nav>
+            
         </footer>
         <script src="script.js"></script>
     </body>
