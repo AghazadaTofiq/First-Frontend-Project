@@ -1,38 +1,17 @@
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
-let slideIndex = 0;
-
-btn.onclick = function() 
+function ChangeSlide()
 {
-  modal.style.display = "block";
-}
-
-span.onclick = function() 
-{
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) 
-{
-  if (event.target == modal) 
+  if(document.getElementsByClassName("Xavier")[0].style.opacity==0)
   {
-    modal.style.display = "none";
+    document.getElementsByClassName("Hernandez")[0].style.opacity==0;
+    document.getElementsByClassName("Xavier")[0].style.opacity==1;
+  }
+  else
+  {
+    document.getElementsByClassName("Hernandez")[0].style.opacity==1;
+    document.getElementsByClassName("Xavier")[0].style.opacity==0;
   }
 }
-
-showSlides();
-
-function showSlides() 
+function myFunction()
 {
-  let i;
-  let slides = document.getElementsByClassName("Respect");
-  for (i = 0; i < slides.length; i++) 
-  {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  document.getElementById("myModal").style.display=block;
 }
