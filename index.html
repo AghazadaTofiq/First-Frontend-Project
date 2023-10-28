@@ -17,26 +17,36 @@
                     <li><a href="#Opening">HOME</a>
                     <li><a href="#">BLOG</a>
                     <li><a href="#">PORTFOLIO</a>
-                    <li><a href="#" id="myBtn" onclick="myFunction()">ABOUT THE TESTS ^</a>
+                            <li><a href="#">ABOUT THE TESTS &dtrif;</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Web Development</a></li>
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">Illustration</a></li>
+                                    <li><a href="#">Iconography</a></li>
+                                  </ul>
+                                </li>
                     <li><a href="#">LEVEL 1 ^</a>
-                    <li><a href="#">SHOP</a>
-                    <li><img src="images/search_icon.png" alt="">
+                    <li><a href="#">SHOP</a></li>
+                        <div class="Search_Place">
+                            <li><img src="images/search_icon.png" alt=""></li>
+                            <div class="Search_Input">
+                                <input type="text" id="fname" name="fname">
+                                <button>SEARCH</button>
+                            </div>
+                                
+                        </div>
+                    
                 </ul>
             </nav>
-
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Some text in the Modal..</p>
-                </div>
-            </div>
         </header>
 
         <main>
             <section class="Opening" >
                 <h1 class="Opening_Header1">Welcome</h1>
-                <button class="read_more">READ MORE</button>
-                <button class="download_now">DOWNLOAD NOW</button>
+                <div class="Opening_Buttons">
+                    <button class="read_more">READ MORE</button>
+                    <button class="download_now">DOWNLOAD NOW</button>
+                </div>
             </section>
 
             <section class="About_Company">
@@ -59,9 +69,13 @@
             </section>
 
             <section class="Parallax">
-                <h1 class="Parallax_Header1">Small Parallax Section</h1>
-                <p class="Parallax_Text1">Some sentences</p>
-                <button class="Parallax_more_info">MORE INFO</button>
+                <div class="Parallax_Elements">
+                    <h1 class="Parallax_Header1">Small Parallax Section</h1>
+                    <p class="Parallax_Text1">Some sentences</p>
+                    <div class="Parallax_Buttons">
+                        <button class="Parallax_more_info">MORE INFO</button>
+                    </div>
+                </div>
             </section>
 
             <section class="Options">
@@ -76,14 +90,14 @@
                 <p class="Projects_Text1">Here is our latest projects. You'll love them!</p>
 
                 <div class="Projects_grid">
-                    <div class="first">
+                    <div class="first_project">
                         <img src="images/1.jpg" alt="">
-
-                        <div class="first_text">
-                            <p>SALAM</p>
+                        <div class="hover_text">
+                            <p>Salam</p>
                         </div>
+                        
                     </div>
-
+                    
                     <img src="images/2.jpg" alt="">
                     <img src="images/3.jpg" alt="">
                     <img src="images/4.jpg" alt="">
@@ -100,19 +114,10 @@
                 <h1 class="Propaganda_Header1">Propaganda Section</h1>
 
                 <div class="Xavier">
-                    <p class="Xavier_Text1">Some sentences</p>
+                    <p>Some sentences</p>
                     <img src="images/Xavier.jpg" alt="" >
                     <p>Xavier</p>
                 </div>
-
-                <div class="Hernandez">
-                    <p class="Hernandez_Text1">Some sentences</p>
-                    <img src="images/Hernandez.jpg" alt="" >
-                    <p>Hernandez</p>
-                </div>
-
-                <a class="prev" onclick="ChangeSlide()">&#10094;</a>
-                <a class="next" onclick="ChangeSlide()">&#10095;</a>
             </section>
 
             <section class="Partners">
