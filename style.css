@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 header
 {
     display: flex;
@@ -63,29 +68,36 @@ nav  ul  li img
 .logo
 {
     margin-left: 125px;
-    margin-top: -20px;
     text-decoration: none;
 }
 .logo h1
 {
     text-decoration: none;
 }
-.Search_Place
-{
-    display: flex;
-    flex-direction: column;
-}
 .Search_Input
 {
-    position: relative;
-    left: -50px;
+    position: absolute;
+    margin-left: -200px;
+    margin-top: -250px;
     display: flex;
     width: 250px;
+    height: 50px;
     justify-content: space-between;
     border-style: solid;
     border-color: white;
     border-width: 5px;
     background: white;
+    transition: 1s;
+}
+.Search_Button
+{
+    width: 75px;
+    background-color: blue;
+    color: white;
+}
+.Search_Place:hover > .Search_Input
+{
+    margin-top: 0px;
 }
 
 .Opening 
@@ -300,7 +312,6 @@ nav  ul  li img
 {
     display: block;
     background-color: black;
-    width: 100%;
 }
 .Projects_Header1
 {
@@ -315,37 +326,283 @@ nav  ul  li img
 .Projects_grid
 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 100px;
-}
-.first_project
-{
-    position: relative;
-}
-.hover_text
-{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 0;
-    left: 0;
-    overflow: hidden;
-}
-.hover_text p
-{
-    
-    color: white;
+    grid-template-columns: repeat(4, 0fr);
+    grid-template-rows: repeat(3, 0fr);
 }
 .Projects_grid img
 {
     width: 375px;
-    height: 375px;
+    height: 280px;
 }
-.Projects_grid img:hover
+.first_project
 {
-    cursor: pointer;
+    position: relative;
+    transition: 1s;
+}
+.first_project > .hover_text
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    overflow: hidden;
+}
+.first_project > .hover_text > p
+{
+    position: relative;
+    color: white;
+    font-size: 32px;
+    margin-left: 125px;
+}
+.first_project:hover > .hover_text
+{
+    height: 100%;
+}
+.second_project
+{
+    position: relative;
+    transition: 1s;
+}
+.second_project > .hover_text
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    overflow: hidden;
+}
+.second_project > .hover_text > p
+{
+    position: relative;
+    color: white;
+    font-size: 32px;
+    margin-left: 125px;
+}
+.second_project:hover > .hover_text
+{
+    height: 100%;
+}
+.third_project
+{
+    position: relative;
+    transition: 1s;
+}
+.third_project > .hover_text
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    overflow: hidden;
+}
+.third_project > .hover_text > p
+{
+    position: relative;
+    color: white;
+    font-size: 32px;
+    margin-left: 125px;
+}
+.third_project:hover > .hover_text
+{
+    height: 100%;
+}
+.fourth_project
+{
+    position: relative;
+    transition: 1s;
+}
+.fourth_project > .hover_text
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    overflow: hidden;
+}
+.fourth_project > .hover_text > p
+{
+    position: relative;
+    color: white;
+    font-size: 32px;
+    margin-left: 125px;
+}
+.fourth_project:hover > .hover_text
+{
+    height: 100%;
+}
+.fifth_project
+{
+    position: relative;
+    transition: 1s;
+}
+.fifth_project > .hover_text
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    overflow: hidden;
+}
+.fifth_project > .hover_text > p
+{
+    position: relative;
+    color: white;
+    font-size: 32px;
+    margin-left: 125px;
+}
+.fifth_project:hover > .hover_text
+{
+    height: 100%;
+}
+.sixth_project
+{
+    position: relative;
+    transition: 1s;
+}
+.sixth_project > .hover_text
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    overflow: hidden;
+}
+.sixth_project > .hover_text > p
+{
+    position: relative;
+    color: white;
+    font-size: 32px;
+    margin-left: 125px;
+}
+.sixth_project:hover > .hover_text
+{
+    height: 100%;
+}
+.seventh_project
+{
+    position: relative;
+    transition: 1s;
+}
+.seventh_project > .hover_text
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    overflow: hidden;
+}
+.seventh_project > .hover_text > p
+{
+    position: relative;
+    color: white;
+    font-size: 32px;
+    margin-left: 125px;
+}
+.seventh_project:hover > .hover_text
+{
+    height: 100%;
+}
+.eighth_project
+{
+    position: relative;
+    transition: 1s;
+}
+.eighth_project > .hover_text
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    overflow: hidden;
+}
+.eighth_project > .hover_text > p
+{
+    position: relative;
+    color: white;
+    font-size: 32px;
+    margin-left: 125px;
+}
+.eighth_project:hover > .hover_text
+{
+    height: 100%;
+}
+.ninth_project
+{
+    position: relative;
+    transition: 1s;
+}
+.ninth_project > .hover_text
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    overflow: hidden;
+}
+.ninth_project > .hover_text > p
+{
+    position: relative;
+    color: white;
+    font-size: 32px;
+    margin-left: 125px;
+}
+.ninth_project:hover > .hover_text
+{
+    height: 100%;
+}
+.tenth_project
+{
+    position: relative;
+    transition: 1s;
+}
+.tenth_project > .hover_text
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    overflow: hidden;
+}
+.tenth_project > .hover_text > p
+{
+    position: relative;
+    color: white;
+    font-size: 32px;
+    margin-left: 125px;
+}
+.tenth_project:hover > .hover_text
+{
+    height: 100%;
 }
 
 .Propaganda
@@ -441,4 +698,225 @@ footer nav ul li
     margin-right: 50px;
     padding: 0px;
     margin-top: 20px;
+}
+.SideBar
+{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+@media(max-width: 768px)
+{
+.logo > h1
+{
+    margin-left: -100px;
+    margin-top: 20px;
+}
+.Opening
+{
+    background-size: cover;
+}
+.Opening_Header1
+{
+    text-align: center;
+}
+.Opening_Buttons
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+.About_Company
+{
+    display: block;
+    height: 100vh;
+    padding-bottom: 100px;
+}
+.About_Company > img
+{
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+    margin-left: -75px;
+    padding-bottom: 50px;
+}
+.About_Company_Right_Hand_Side
+{
+    margin-right: -150px;
+}
+.About_Company_Header1
+{
+    padding-bottom: 20px;
+}
+.About_Portfolio
+{
+    display: block;
+    margin-left: -150px;
+    padding-bottom: 100px;
+}
+.About_Portfolio_Left_Hand_Side
+{
+    padding-bottom: 50px;
+}
+.About_Portfolio > img
+{
+    width: 350px;
+    height:250px;
+    margin-left: 150px;
+}
+.Options
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: whitesmoke;
+}
+.Options >img
+{
+    width: 100%;
+    height: 250px;
+}
+.Projects_Header1
+{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.Projects_Text1
+{
+    padding-bottom: 10px;
+}
+.first_project > .hover_text
+{
+    height: 100%;
+}
+.second_project > .hover_text
+{
+    height: 100%;
+}
+.third_project > .hover_text
+{
+    height: 100%;
+}
+.fourth_project > .hover_text
+{
+    height: 100%;
+}
+.fifth_project > .hover_text
+{
+    height: 100%;
+}
+.sixth_project > .hover_text
+{
+    height: 100%;
+}
+.seventh_project > .hover_text
+{
+    height: 100%;
+}
+.eighth_project > .hover_text
+{
+    height: 100%;
+}
+.ninth_project > .hover_text
+{
+    height: 100%;
+}
+.tenth_project > .hover_text
+{
+    height: 100%;
+}
+.Projects_grid
+{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+.Propaganda
+{
+    height: 100%;
+}
+.Partners
+{
+    height: 100%;
+}
+.Partners_logos
+{
+    margin-left: 30px;
+    width: 350px;
+    overflow: hidden;
+}
+.Income
+{
+    justify-content: center;
+    gap: 10px;
+}
+.Income_Header1
+{
+    font-size: 16px;
+}
+footer
+{
+    display: flex;
+    flex-direction: column;
+}
+footer > h6
+{
+    font-size: 16px;
+    margin-left: 10px;
+}
+footer nav ul li
+{
+    margin-left: -20px;
+}
+.Navigation_Bar > nav > ul
+{
+    display: flex;
+    flex-direction: column;
+}
+.Navigation_Bar > nav > ul > li
+{
+    padding: 5px;
+}
+.Navigation_Bar
+{
+    padding-bottom: 10px;
+}
+header
+{
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+}
+.Navigation_Bar > .Search_Place
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.Search_Place > .Search_Input
+{
+    margin: 0;
+    padding: 0;
+}
+.Search_Place li img
+{
+    display: none;
+}
+.SideBar
+{
+    display: inline-block;
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+.SideBar > .SideMenu > img
+{
+    height: 25px;
+    width: 25px;
+}
 }
