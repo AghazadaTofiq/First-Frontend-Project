@@ -2,25 +2,53 @@
     margin: 0;
     padding: 0;
 }
-
+/*Header*/
 header
 {
-    display: flex;
-    justify-content: space-between;
     height: 10vh;
+    
 }
-nav ul
+header > .Top_Panel
+{
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.Top_Panel > .MainPage
+{
+    position: relative;
+    width: 200px;
+}
+.Top_Panel > .MainPage > .logo
+{
+    float: right;
+    text-decoration: none;
+}
+.Navigation_Bar
+{
+   height: 10vh; 
+   position: relative;
+}
+.Navigation_List
+{
+    height: 10vh; 
+   position: relative;
+}
+.UnOrdered_Nav_List
 {
     display: flex;
     list-style-type: none;
-    margin-top: -10px;
+    height: 10vh; 
+   position: relative;
+   align-items: center;
 }
-nav ul li
+.UnOrdered_Nav_List > li
 {
-    padding: 25px;
+    padding-left: 25px;
     position: relative;
 }
-nav  ul  li a
+.UnOrdered_Nav_List > li a
 {
     text-decoration: none;
     color: black;
@@ -31,55 +59,52 @@ nav  ul  li a
     opacity: 0;
     display: none;
     position: absolute;
-    margin-top: 10px;
-    min-width: 250px;
-    background-color: white;
-    padding-left: 0;
-    left: 0;
-    text-align: left;
+    width: 130%;
     align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    list-style: none;
 }
-ul li:hover > ul,
-    ul li ul:hover
+.dropdown_for_tests
+{
+    
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    height: 130px;
+}
+.dropdown_for_tests > li
+{
+    position: relative;
+    padding-top: 10px;
+}
+.dropdown_for_tests > li > a
+{
+    text-align: left;
+}
+.dropdown:hover 
 {
     visibility: visible;
     opacity: 1;
-    display: block;
+    display: flex;
 }
-.dropdown li
-{
-    width: 80%;
-    height: 0.1vh;
-    width: 100%;
-      text-align: left;
-      margin-bottom: 20px;
-}
-.dropdown li:hover
-{
-    width: 80%;
-    height: 0.1vh;
-    background-color: whitesmoke;
-}
-nav  ul  li img
+.UnOrdered_Nav_List li img
 {
     width: 25px;
     height: 25px;
 }
-.logo
+.Magnify
 {
-    margin-left: 125px;
-    text-decoration: none;
-}
-.logo h1
-{
-    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 .Search_Input
 {
     position: absolute;
-    margin-left: -200px;
-    margin-top: -250px;
     display: flex;
+    margin-left: -250px;
+    margin-top: 10px;
     width: 250px;
     height: 50px;
     justify-content: space-between;
@@ -88,6 +113,7 @@ nav  ul  li img
     border-width: 5px;
     background: white;
     transition: 1s;
+    z-index: 1;
 }
 .Search_Button
 {
@@ -95,17 +121,33 @@ nav  ul  li img
     background-color: blue;
     color: white;
 }
-.Search_Place:hover > .Search_Input
+.Magnify:hover .Search_Input
 {
-    margin-top: 0px;
+    margin-top: -200px;
 }
-
+.SideBar
+{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+/*Opening*/
 .Opening 
 {
+    position: relative;
     width: 100%;
     height: 100vh;
     background-image: url(images/Opening_background.jpg);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Opening_Part
+{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -151,24 +193,37 @@ nav  ul  li img
     color: black;
     background-color: white;
 }
-
+/*About_Company*/
 .About_Company
 {
+    position: relative;
     height: 90vh;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+.About_Copmany_Part
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
 }
 .About_Company img
 {
     width: 700px;
     height: 450px;
-    padding-left: 150px;
 }
 .About_Company_Right_Hand_Side
 {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
     align-items: center;
-    margin-left: 100px;
 }
 .About_Company_read_more
 {
@@ -183,29 +238,36 @@ nav  ul  li img
     cursor: pointer;
     background-color: dodgerblue;
 }
-
+/*About_Portfolio*/
 .About_Portfolio
 {
+    position: relative;
     height: 100vh;
-    display: flex;
+    width: 100%;
     align-items: center;
+    justify-content: center;
     background-color: whitesmoke;
-    gap: 150px;
+}
+.About_Portfolio_Part
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    column-gap: 150px;
 }
 .About_Portfolio_Left_Hand_Side
 {
-    display: block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding-left: 200px;
+    row-gap: 20px;
 }
 .About_Portfolio_Header1
 {
     font-size: 36px;
-}
-.About_Portfolio_Text1
-{
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 .About_Portfolio_see
 {
@@ -224,26 +286,31 @@ nav  ul  li img
 {
     width: 700px;
     height: 450px;
-    margin-left: 100px;
 }
-
+/*Parallax*/
 .Parallax
 {
+    position: relative;
     height: 60vh;
     background-image: url("images/Parallax.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 .Parallax_Elements
 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    height: 40vh;
+    align-items: center;
     justify-content: center;
+    row-gap: 25px;
 }
 .Parallax_Header1
 {
@@ -274,19 +341,30 @@ nav  ul  li img
     cursor: pointer;
     background-color: dodgerblue;
 }
-
+/*Options*/
 .Options
 {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    align-items: center;
+    justify-content: center;
+}
+.Options_Part
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    row-gap: 5px;
 }
 .Options_Header1
 {
     color: black;
     text-align: center;
-    margin-top: 75px;
 }
 .Options_Text1
 {
@@ -295,7 +373,6 @@ nav  ul  li img
 }
 .Options_download
 {
-    vertical-align: middle;
     width: 200px;
     height: 50px;
     color: white;
@@ -307,20 +384,40 @@ nav  ul  li img
     cursor: pointer;
     background-color: dodgerblue;
 }
-
+.Options_Part img
+{
+    height: auto;
+    max-width: 100%;
+}
+/*Projects*/
 .Projects
 {
-    display: block;
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: black;
+}
+.Projects_Part
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
 }
 .Projects_Header1
 {
-    text-align: center;
     color: white;
 }
 .Projects_Text1
 {
-    text-align: center;
     color: white;
 }
 .Projects_grid
@@ -347,15 +444,17 @@ nav  ul  li img
     width: 100%;
     height: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    transition: 1s;
+    transition: .5s;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .first_project > .hover_text > p
 {
     position: relative;
     color: white;
     font-size: 32px;
-    margin-left: 125px;
 }
 .first_project:hover > .hover_text
 {
@@ -376,13 +475,15 @@ nav  ul  li img
     background-color: rgba(0, 0, 0, 0.5);
     transition: 1s;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .second_project > .hover_text > p
 {
     position: relative;
     color: white;
     font-size: 32px;
-    margin-left: 125px;
 }
 .second_project:hover > .hover_text
 {
@@ -403,13 +504,15 @@ nav  ul  li img
     background-color: rgba(0, 0, 0, 0.5);
     transition: 1s;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .third_project > .hover_text > p
 {
     position: relative;
     color: white;
     font-size: 32px;
-    margin-left: 125px;
 }
 .third_project:hover > .hover_text
 {
@@ -430,13 +533,15 @@ nav  ul  li img
     background-color: rgba(0, 0, 0, 0.5);
     transition: 1s;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .fourth_project > .hover_text > p
 {
     position: relative;
     color: white;
     font-size: 32px;
-    margin-left: 125px;
 }
 .fourth_project:hover > .hover_text
 {
@@ -457,13 +562,15 @@ nav  ul  li img
     background-color: rgba(0, 0, 0, 0.5);
     transition: 1s;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .fifth_project > .hover_text > p
 {
     position: relative;
     color: white;
     font-size: 32px;
-    margin-left: 125px;
 }
 .fifth_project:hover > .hover_text
 {
@@ -484,13 +591,15 @@ nav  ul  li img
     background-color: rgba(0, 0, 0, 0.5);
     transition: 1s;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .sixth_project > .hover_text > p
 {
     position: relative;
     color: white;
     font-size: 32px;
-    margin-left: 125px;
 }
 .sixth_project:hover > .hover_text
 {
@@ -511,13 +620,15 @@ nav  ul  li img
     background-color: rgba(0, 0, 0, 0.5);
     transition: 1s;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .seventh_project > .hover_text > p
 {
     position: relative;
     color: white;
     font-size: 32px;
-    margin-left: 125px;
 }
 .seventh_project:hover > .hover_text
 {
@@ -538,13 +649,15 @@ nav  ul  li img
     background-color: rgba(0, 0, 0, 0.5);
     transition: 1s;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .eighth_project > .hover_text > p
 {
     position: relative;
     color: white;
     font-size: 32px;
-    margin-left: 125px;
 }
 .eighth_project:hover > .hover_text
 {
@@ -565,13 +678,15 @@ nav  ul  li img
     background-color: rgba(0, 0, 0, 0.5);
     transition: 1s;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .ninth_project > .hover_text > p
 {
     position: relative;
     color: white;
     font-size: 32px;
-    margin-left: 125px;
 }
 .ninth_project:hover > .hover_text
 {
@@ -592,21 +707,25 @@ nav  ul  li img
     background-color: rgba(0, 0, 0, 0.5);
     transition: 1s;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .tenth_project > .hover_text > p
 {
     position: relative;
     color: white;
     font-size: 32px;
-    margin-left: 125px;
 }
 .tenth_project:hover > .hover_text
 {
     height: 100%;
 }
-
+/*Propaganda*/
 .Propaganda
 {
+    position: relative;
+    width: 100%;
     height: 60vh;
     background-image: url("images/Propaganda_img.jpg");
     background-attachment: fixed;
@@ -616,50 +735,75 @@ nav  ul  li img
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+.Propaganda_Part
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
 }
 .Propaganda_Header1
 {
-    padding-top: 25px;
     color: white;
-    text-align: center;
 }
 .Xavier
 {
     display: flex;
     flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 .Xavier p
 {
     color: white;
-    text-align: center;
+    font-size: 24px;
 }
 .Xavier img
 {
     border-radius: 50%;
 }
-
+/*Partners*/
 .Partners
 {
+    position: relative;
+    width: 100%;
     height: 40vh;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Partners_Part
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
 }
 .Partners_Header1
 {
-    margin-top: 75px;
-    color: black;
-    text-align: center;
     font-size: 36px;
 }
 .Partners_logos
 {
     display: flex;
     justify-content: space-between;
+    column-gap: 50px;
 }
 .Partners_logos img
 {
     height: 50px;
     width: 50px;
-    margin: 50px;
     opacity: 0.5;
 }
 .Partners_logos img:hover
@@ -667,256 +811,59 @@ nav  ul  li img
     opacity: 1;
     cursor: pointer;
 }
-
+/*Income*/
 .Income
 {
+    position: relative;
+    width: 100%;
+    height: 40vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40vh;
-    gap: 100px;
     background-color: whitesmoke;
 }
-
+.Income_Part
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    column-gap: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*footer*/
 footer
 {
-    display: flex;
+    position: relative;
+    width: 100%;
     height: 25vh;
     background-color: black;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
-footer h6
+.Next
+{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Next h6
 {
     color: white;
-    margin-left: 100px;
-    margin-top: 10px;
     font-size: 25px;
 }
-footer nav ul li
-{
-    margin-right: 50px;
-    padding: 0px;
-    margin-top: 20px;
-}
-.SideBar
-{
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-}
-@media(max-width: 768px)
-{
-.logo > h1
-{
-    margin-left: -100px;
-    margin-top: 20px;
-}
-.Opening
-{
-    background-size: cover;
-}
-.Opening_Header1
-{
-    text-align: center;
-}
-.Opening_Buttons
+.Social_Media 
 {
     display: flex;
-    flex-direction: column;
-    margin-left: 100px;
+    column-gap: 50px;
 }
-.About_Company
+.Social_Media img
 {
-    display: block;
-    height: 100vh;
-    padding-bottom: 100px;
-}
-.About_Company > img
-{
-    width: 250px;
-    height: 250px;
-    margin-top: 50px;
-    margin-left: -75px;
-    padding-bottom: 50px;
-}
-.About_Company_Right_Hand_Side
-{
-    margin-right: -150px;
-}
-.About_Company_Header1
-{
-    padding-bottom: 20px;
-}
-.About_Portfolio
-{
-    display: block;
-    margin-left: -150px;
-    padding-bottom: 100px;
-}
-.About_Portfolio_Left_Hand_Side
-{
-    padding-bottom: 50px;
-}
-.About_Portfolio > img
-{
-    width: 350px;
-    height:250px;
-    margin-left: 150px;
-}
-.Options
-{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background-color: whitesmoke;
-}
-.Options >img
-{
-    width: 100%;
-    height: 250px;
-}
-.Projects_Header1
-{
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
-.Projects_Text1
-{
-    padding-bottom: 10px;
-}
-.first_project > .hover_text
-{
-    height: 100%;
-}
-.second_project > .hover_text
-{
-    height: 100%;
-}
-.third_project > .hover_text
-{
-    height: 100%;
-}
-.fourth_project > .hover_text
-{
-    height: 100%;
-}
-.fifth_project > .hover_text
-{
-    height: 100%;
-}
-.sixth_project > .hover_text
-{
-    height: 100%;
-}
-.seventh_project > .hover_text
-{
-    height: 100%;
-}
-.eighth_project > .hover_text
-{
-    height: 100%;
-}
-.ninth_project > .hover_text
-{
-    height: 100%;
-}
-.tenth_project > .hover_text
-{
-    height: 100%;
-}
-.Projects_grid
-{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 50px;
-}
-.Propaganda
-{
-    height: 100%;
-}
-.Partners
-{
-    height: 100%;
-}
-.Partners_logos
-{
-    margin-left: 30px;
-    width: 350px;
-    overflow: hidden;
-}
-.Income
-{
-    justify-content: center;
-    gap: 10px;
-}
-.Income_Header1
-{
-    font-size: 16px;
-}
-footer
-{
-    display: flex;
-    flex-direction: column;
-}
-footer > h6
-{
-    font-size: 16px;
-    margin-left: 10px;
-}
-footer nav ul li
-{
-    margin-left: -20px;
-}
-.Navigation_Bar > nav > ul
-{
-    display: flex;
-    flex-direction: column;
-}
-.Navigation_Bar > nav > ul > li
-{
-    padding: 5px;
-}
-.Navigation_Bar
-{
-    padding-bottom: 10px;
-}
-header
-{
-    height: 270px;
-    display: flex;
-    flex-direction: column;
-}
-.Navigation_Bar > .Search_Place
-{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-.Search_Place > .Search_Input
-{
-    margin: 0;
-    padding: 0;
-}
-.Search_Place li img
-{
-    display: none;
-}
-.SideBar
-{
-    display: inline-block;
-    visibility: visible;
-    opacity: 1;
-    position: absolute;
-    right: 0px;
-    top: 10px;
-    height: 50px;
-    width: 50px;
-    margin-right: 20px;
-}
-.SideBar > .SideMenu > img
-{
-    height: 25px;
-    width: 25px;
-}
+    width: 35px;
+    height: 35px;
 }

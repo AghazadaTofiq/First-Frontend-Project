@@ -5,70 +5,82 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Company Project</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style(UpTo320).css">
+        <link rel="stylesheet" href="style(UpTo375).css">
+        <link rel="stylesheet" href="style(UpTo425).css">
+        <link rel="stylesheet" href="style(UpTo768).css">
     </head>
     <body>
         <header id="Opening">
-            <a href="#Opening" class="logo">    
-                <h1>Shapely</h1>
-            </a>
-            <div class="Navigation_Bar">
-                <nav>
-                    <ul>
-                        <li><a href="#Opening">HOME</a>
-                        <li><a href="#">BLOG</a>
-                        <li><a href="#">PORTFOLIO</a>
-                        <li><a href="#">ABOUT THE TESTS &dtrif;</a>
-                        <ul class="dropdown">
-                            <li><a href="#">Web Development</a></li>
-                            <li><a href="#">Web Design</a></li>
-                            <li><a href="#">Illustration</a></li>
-                            <li><a href="#">Iconography</a></li>
-                          </ul>
-                        </li>
-                        <li><a href="#">LEVEL 1 ^</a>
-                        <li><a href="#">SHOP</a></li>
-                        <div class="Search_Place">
-                            <li><img src="images/search_icon.png" alt=""></li>
-                            <div class="Search_Input" style="margin-top: -50px;">
-                                <input type="text" id="fname" name="fname">
-                                <button class="Search_Button">SEARCH</button>
-                            </div>
-                        </div>
-                    </ul>
-                </nav>
+            <div class="Top_Panel">
+                <div class="MainPage">
+                    <a href="#Opening" class="logo">    
+                        <h1>Shapely</h1>
+                    </a>
+                </div>
+                <div class="Navigation_Bar">
+                    <nav class="Navigation_List">
+                        <ul class="UnOrdered_Nav_List">
+                            <li><a href="#Opening">HOME</a></li>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">PORTFOLIO</a></li>
+                            <li><a href="#">ABOUT THE TESTS &dtrif;</a>
+                                    <ul class="dropdown">
+                                        <div class="dropdown_for_tests">
+                                            <li><a href="#">Web Development</a></li>
+                                            <li><a href="#">Web Design</a></li>
+                                            <li><a href="#">Illustration</a></li>
+                                            <li><a href="#">Iconography</a></li>
+                                        </div>
+                                    </ul>
+                            </li>
+                            <li><a href="#">LEVEL 1</a></li>
+                            <li><a href="#">SHOP</a></li>
+                            <li><img class="Magnify" src="images/search_icon.png" alt="">
+                                <div class="Search_Input">
+                                    <input type="text" id="fname" name="fname">
+                                    <button class="Search_Button">SEARCH</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="SideBar">
+                    <button class="SideMenu"><img src="images/SideMenu.png" alt=""></button>
+                </div>
             </div>
-            <div class="SideBar">
-                <button class="SideMenu"><img src="images/SideMenu.png" alt=""></button>
-            </div>
-            
         </header>
 
         <main>
             <section class="Opening" >
-                <h1 class="Opening_Header1">Welcome</h1>
-                <div class="Opening_Buttons">
-                    <button class="read_more">READ MORE</button>
-                    <button class="download_now">DOWNLOAD NOW</button>
+                <div class="Opening_Part">
+                    <h1 class="Opening_Header1">Welcome</h1>
+                    <div class="Opening_Buttons">
+                        <button class="read_more">READ MORE</button>
+                        <button class="download_now">DOWNLOAD NOW</button>
+                    </div>
                 </div>
             </section>
 
             <section class="About_Company">
-                <img src="images/Opening_background.jpg" alt="">
-
-                <div class="About_Company_Right_Hand_Side">
-                    <h1 class="About_Company_Header1">About Company</h1>
-                    <button class="About_Company_read_more">READ MORE</button>
+                <div class="About_Copmany_Part">
+                    <img src="images/Opening_background.jpg" alt="">
+                    <div class="About_Company_Right_Hand_Side">
+                        <h1 class="About_Company_Header1">About Company</h1>
+                        <button class="About_Company_read_more">READ MORE</button>
+                    </div>
                 </div>
             </section>
 
             <section class="About_Portfolio">
-                <div class="About_Portfolio_Left_Hand_Side">
-                    <h1 class="About_Portfolio_Header1">Portfolio</h1>
-                    <p class="About_Portfolio_Text1">Some sentences</p>
-                    <button class="About_Portfolio_see">SEE IT IN ACTION</button>
+                <div class="About_Portfolio_Part">
+                    <div class="About_Portfolio_Left_Hand_Side">
+                        <h1 class="About_Portfolio_Header1">Portfolio</h1>
+                        <p class="About_Portfolio_Text1">Some sentences</p>
+                        <button class="About_Portfolio_see">SEE IT IN ACTION</button>
+                    </div>
+                    <img src="images/About_Portfolio_img.png" alt="">
                 </div>
-
-                <img src="images/About_Portfolio_img.png" alt="">
             </section>
 
             <section class="Parallax">
@@ -82,140 +94,145 @@
             </section>
 
             <section class="Options">
-                <h1 class="Options_Header1">Limitless Options</h1>
-                <p class="Options_Text1">Some sentences</p>
-                <button class="Options_download">DOWNLOAD NOW</button>
-                <img src="images/Options_image.jpg" alt="">
+                <div class="Options_Part">
+                    <h1 class="Options_Header1">Limitless Options</h1>
+                    <p class="Options_Text1">Some sentences</p>
+                    <button class="Options_download">DOWNLOAD NOW</button>
+                    <img src="images/Options_image.jpg" alt="">
+                </div>
             </section>
 
             <section class="Projects">
-                <h1 class="Projects_Header1">Our Latest Projects</h1>
-                <p class="Projects_Text1">Here is our latest projects. You'll love them!</p>
-
-                <div class="Projects_grid">
-                    <div class="first_project">
-                        <div class="first_image">
-                            <img src="images/1.jpg" alt="">
+                <div class="Projects_Part">
+                    <h1 class="Projects_Header1">Our Latest Projects</h1>
+                    <p class="Projects_Text1">Here is our latest projects. You'll love them!</p>
+                    <div class="Projects_grid">
+                        <div class="first_project">
+                            <div class="first_image">
+                                <img src="images/1.jpg" alt="">
+                            </div>
+                            <div class="hover_text">
+                                <p>Project 1</p>
+                            </div>
                         </div>
-                        <div class="hover_text">
-                            <p>Project 1</p>
+                        <div class="second_project">
+                            <div class="second_image">
+                                <img src="images/2.jpg" alt="">
+                            </div>
+                            <div class="hover_text">
+                                <p>Project 2</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="second_project">
-                        <div class="second_image">
-                            <img src="images/2.jpg" alt="">
+                        <div class="third_project">
+                            <div class="third_image">
+                                <img src="images/3.jpg" alt="">
+                            </div>
+                            <div class="hover_text">
+                                <p>Project 3</p>
+                            </div>
                         </div>
-                        <div class="hover_text">
-                            <p>Project 2</p>
+                        <div class="fourth_project">
+                            <div class="fourth_image">
+                                <img src="images/4.jpg" alt="">
+                            </div>
+                            <div class="hover_text">
+                                <p>Project 4</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="third_project">
-                        <div class="third_image">
-                            <img src="images/3.jpg" alt="">
+                        <div class="fifth_project">
+                            <div class="fifth_image">
+                                <img src="images/5.jpg" alt="">
+                            </div>
+                            <div class="hover_text">
+                                <p>Project 5</p>
+                            </div>
                         </div>
-                        <div class="hover_text">
-                            <p>Project 3</p>
+                        <div class="sixth_project">
+                            <div class="sixth_image">
+                                <img src="images/6.jpg" alt="">
+                            </div>
+                            <div class="hover_text">
+                                <p>Project 6</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="fourth_project">
-                        <div class="fourth_image">
-                            <img src="images/4.jpg" alt="">
+                        <div class="seventh_project">
+                            <div class="seventh_image">
+                                <img src="images/7.jpg" alt="">
+                            </div>
+                            <div class="hover_text">
+                                <p>Project 7</p>
+                            </div>
                         </div>
-                        <div class="hover_text">
-                            <p>Project 4</p>
+                        <div class="eighth_project">
+                            <div class="eighth_image">
+                                <img src="images/8.jpg" alt="">
+                            </div>
+                            <div class="hover_text">
+                                <p>Project 8</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="fifth_project">
-                        <div class="fifth_image">
-                            <img src="images/5.jpg" alt="">
+                        <div class="ninth_project">
+                            <div class="ninth_image">
+                                <img src="images/9.jpg" alt="">
+                            </div>
+                            <div class="hover_text">
+                                <p>Project 9</p>
+                            </div>
                         </div>
-                        <div class="hover_text">
-                            <p>Project 5</p>
-                        </div>
-                    </div>
-                    <div class="sixth_project">
-                        <div class="sixth_image">
-                            <img src="images/6.jpg" alt="">
-                        </div>
-                        <div class="hover_text">
-                            <p>Project 6</p>
-                        </div>
-                    </div>
-                    <div class="seventh_project">
-                        <div class="seventh_image">
-                            <img src="images/7.jpg" alt="">
-                        </div>
-                        <div class="hover_text">
-                            <p>Project 7</p>
-                        </div>
-                    </div>
-                    <div class="eighth_project">
-                        <div class="eighth_image">
-                            <img src="images/8.jpg" alt="">
-                        </div>
-                        <div class="hover_text">
-                            <p>Project 8</p>
-                        </div>
-                    </div>
-                    <div class="ninth_project">
-                        <div class="ninth_image">
-                            <img src="images/9.jpg" alt="">
-                        </div>
-                        <div class="hover_text">
-                            <p>Project 9</p>
-                        </div>
-                    </div>
-                    <div class="tenth_project">
-                        <div class="tenth_image">
-                            <img src="images/10.jpg" alt="">
-                        </div>
-                        <div class="hover_text">
-                            <p>Project 10</p>
+                        <div class="tenth_project">
+                            <div class="tenth_image">
+                                <img src="images/10.jpg" alt="">
+                            </div>
+                            <div class="hover_text">
+                                <p>Project 10</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="Propaganda">
-                <h1 class="Propaganda_Header1">Propaganda Section</h1>
-
-                <div class="Xavier">
-                    <p>Some sentences</p>
-                    <img src="images/Xavier.jpg" alt="" >
-                    <p>Xavier</p>
+                <div class="Propaganda_Part">
+                    <h1 class="Propaganda_Header1">Propaganda Section</h1>
+                    <div class="Xavier">
+                        <p>Some sentences</p>
+                        <img src="images/Xavier.jpg" alt="" >
+                        <p>Xavier</p>
+                    </div>
                 </div>
             </section>
 
             <section class="Partners">
-                <h1 class="Partners_Header1">Partners</h1>
-
-                <div class="Partners_logos">
-                    <img src="images/1_logo.png" alt="">
-                    <img src="images/2_logo.png" alt="">
-                    <img src="images/3_logo.jpg" alt="">
-                    <img src="images/4_logo.png" alt="">
-                    <img src="images/5_logo.png" alt="">
+                <div class="Partners_Part">
+                    <h1 class="Partners_Header1">Partners</h1>
+                    <div class="Partners_logos">
+                        <img src="images/1_logo.png" alt="">
+                        <img src="images/2_logo.png" alt="">
+                        <img src="images/3_logo.jpg" alt="">
+                        <img src="images/4_logo.png" alt="">
+                        <img src="images/5_logo.png" alt="">
+                    </div>
                 </div>
             </section>
 
             <section class="Income">
-                <h1 class="Income_Header1">Does this satisfy you?</h1>
-                <button class="Options_download">DOWNLOAD NOW</button>
+                <div class="Income_Part">
+                    <h1 class="Income_Header1">Does this satisfy you?</h1>
+                    <button class="Options_download">DOWNLOAD NOW</button>
+                </div>
             </section>
         </main>
         <footer>
-            <h6>Prepared by Aghazada Tofig</h6>
-
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="images/facebook_icon.png" alt=""></a>
-                    <li><a href="#"><img src="images/twitter_logo.png" alt=""></a>
-                    <li><a href="#"><img src="images/in_icon.png" alt=""></a>
-                    <li><a href="#"><img src="images/youtube_icon.jpg" alt=""></a>
-                    <li><a href="#"><img src="images/insta_icon.png" alt=""></a>
+            <div class="Next">
+                <h6>Prepared by Aghazada Tofig</h6>
+                <ul class="Social_Media">
+                    <li><a href="#"><img src="images/facebook_icon.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/twitter_logo.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/in_icon.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/youtube_icon.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/insta_icon.png" alt=""></a></li>
                 </ul>
-            </nav>
-            
+            </div>
         </footer>
         <script src="script.js"></script>
     </body>

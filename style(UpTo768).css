@@ -1,0 +1,119 @@
+@media(max-width: 768px)
+{
+    /*Header*/
+    header
+{
+    height: 10vh;
+}
+.logo h1
+{
+    font-size: 24px;
+}
+.UnOrdered_Nav_List
+{
+    flex-direction: column;
+    z-index: 1;
+    right: -400px;
+    top:50px;
+}
+.Magnify
+{
+    display: none;
+}
+.Search_Input
+{
+    height: 30px;
+    width: 30px;
+    margin-left: -60px;
+}
+.Search_Input input
+{
+    width: 90px;
+}
+.Search_Button
+{
+    width: 60px;
+}
+.SideBar
+{
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+.SideMenu img
+{
+    width: 20px;
+    height: 20px;
+}
+/*About_Copmany*/
+.About_Copmany_Part img
+{
+    width: 300px;
+    height: 250px;
+}
+/*About_Portfolio*/
+.About_Portfolio_Part img
+{
+    width: 300px;
+    height: 250px;
+}
+/*Options*/
+.Options
+{
+    height: 180vh;
+}
+/*Projects*/
+.Projects
+{
+    height: 450vh;
+}
+.Projects_grid
+{
+    grid-template-columns: repeat(2, 0fr);
+    grid-template-rows: repeat(5, 0fr);
+}
+.Projects_grid img
+{
+    width: 385px;
+    height: 320px;
+}
+/*Propaganda*/
+.Propaganda_Header1
+{
+    font-size: 24px;
+}
+.Xavier p
+{
+    font-size: 16px;
+}
+.Propaganda_Part
+{
+    row-gap: 5px;
+}
+.Xavier img
+{
+    height: 100px;
+    width: 100px;
+}
+/*Partners*/
+.Partners_Part
+{
+    width: 80%;
+    overflow: hidden;
+    row-gap: 20px;
+}
+.Partners_Header1
+{
+    font-size: 24px;
+}
+/*footer*/
+.Next h6
+{
+    font-size: 20px;
+}
+.Social_Media img
+{
+    width: 25px;
+    height: 25px;
+}
+}
