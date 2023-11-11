@@ -751,9 +751,28 @@ header > .Top_Panel
 .Propaganda_Header1
 {
     color: white;
+    margin-bottom: 350px;
+    font-size: 36px;
+}
+.Propaganda_Arrows
+{
+    position: absolute;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Propaganda_Arrows button
+{
+    scale: 2;
+    background: none;
+    border: none;
+    color: white;
+    opacity: .5;
 }
 .Xavier
 {
+    position: absolute;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -768,6 +787,29 @@ header > .Top_Panel
 .Xavier img
 {
     border-radius: 50%;
+}
+.Hernandez
+{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.Hernandez p
+{
+    color: white;
+    font-size: 24px;
+}
+.Hernandez img
+{
+    border-radius: 50%;
+}
+.Propaganda_Arrows button:hover
+{
+    opacity: 1;
+    cursor: pointer;
 }
 /*Partners*/
 .Partners

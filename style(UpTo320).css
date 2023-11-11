@@ -107,11 +107,20 @@
 {
     font-size: 16px;
 }
+.Hernandez p
+{
+    font-size: 16px;
+}
 .Propaganda_Part
 {
     row-gap: 5px;
 }
 .Xavier img
+{
+    height: 100px;
+    width: 100px;
+}
+.Hernandez img
 {
     height: 100px;
     width: 100px;
