@@ -65,7 +65,7 @@
 /*Projects*/
 .Projects
 {
-    height: 450vh;
+    height: 380vh;
 }
 .Projects_grid
 {
@@ -81,6 +81,11 @@
 .Propaganda_Header1
 {
     font-size: 24px;
+    margin-bottom: 250px;
+}
+.Propaganda_Arrows
+{
+    width: 60%;
 }
 .Xavier p
 {
@@ -114,6 +119,10 @@
 .Partners_Header1
 {
     font-size: 24px;
+}
+.Partners_logos
+{
+    column-gap: 60px;
 }
 /*footer*/
 .Next h6

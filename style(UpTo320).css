@@ -83,10 +83,15 @@
 {
     height: 100vh;
 }
+.Options_Part img
+{
+    height: 70%;
+    max-width: 70%;
+}
 /*Projects*/
 .Projects
 {
-    height: 600vh;
+    height: 470vh;
 }
 .Projects_grid
 {
@@ -102,6 +107,11 @@
 .Propaganda_Header1
 {
     font-size: 24px;
+    margin-bottom: 250px;
+}
+.Propaganda_Arrows
+{
+    width: 60%;
 }
 .Xavier p
 {
@@ -110,10 +120,6 @@
 .Hernandez p
 {
     font-size: 16px;
-}
-.Propaganda_Part
-{
-    row-gap: 5px;
 }
 .Xavier img
 {
@@ -135,6 +141,10 @@
 .Partners_Header1
 {
     font-size: 24px;
+}
+.Partners_logos
+{
+    column-gap: 30px;
 }
 /*Income*/
 .Income_Part

@@ -81,12 +81,17 @@
 /*Options*/
 .Options
 {
-    height: 110vh;
+    height: 100vh;
+}
+.Options_Part img
+{
+    height: 300px;
+    max-width: 300px;
 }
 /*Projects*/
 .Projects
 {
-    height: 600vh;
+    height: 470vh;
 }
 .Projects_grid
 {
@@ -102,6 +107,11 @@
 .Propaganda_Header1
 {
     font-size: 24px;
+    margin-bottom: 250px;
+}
+.Propaganda_Arrows
+{
+    width: 60%;
 }
 .Xavier p
 {
@@ -135,6 +145,10 @@
 .Partners_Header1
 {
     font-size: 24px;
+}
+.Partners_logos
+{
+    column-gap: 50px;
 }
 /*Income*/
 .Income_Part
